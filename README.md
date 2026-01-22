@@ -1,6 +1,7 @@
 # Vijit Vishnoi | Backend & Full-Stack Developer
 
-![Portfolio Preview](./public/screenshot.png)
+![Portfolio Preview](<img width="1861" height="934" alt="Screenshot 2026-01-23 014320" src="https://github.com/user-attachments/assets/9ceb3be0-4295-4e1a-a05d-d9b015a736d0" />
+)
 
 <div align="center">
 
@@ -100,7 +101,7 @@ I am actively seeking **Backend / Full-Stack Engineering** roles (Available May 
 
 * **Email:** [vishnoivijit@gmail.com](mailto:vishnoivijit@gmail.com)
 * **LinkedIn:** [linkedin.com/in/vijit-vishnoi](https://linkedin.com/in/vijit-vishnoi)
-* **GitHub:** [github.com/vishnoivijit](https://github.com/vishnoivijit)
+* **GitHub:** [github.com/vishnoivijit](https://github.com/vijit-vishnoi)
 
 ---
 
