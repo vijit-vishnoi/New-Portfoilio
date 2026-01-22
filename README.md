@@ -11,7 +11,7 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 
-**[View Live Demo](https://YOUR-DEPLOYED-LINK-HERE.com)**
+**[View Live Demo]([https://YOUR-DEPLOYED-LINK-HERE.com](https://portfolio-6ffb8v45n-vijit-vishnois-projects.vercel.app/))**
 
 </div>
 
