@@ -1,6 +1,7 @@
 # Vijit Vishnoi | Backend & Full-Stack Developer
 
-![Portfolio Preview](./public/screenshot.png)
+![Portfolio Preview](https://github.com/user-attachments/assets/8d6b812d-fa23-4e16-8e26-3fc0f627aa63)
+
 
 <div align="center">
 
@@ -10,7 +11,7 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 
-**[View Live Demo](https://YOUR-DEPLOYED-LINK-HERE.com) • [Request Feature](https://github.com/vishnoivijit/portfolio/issues)**
+**[View Live Demo](https://portfolio-6ffb8v45n-vijit-vishnois-projects.vercel.app/)**
 
 </div>
 
@@ -100,7 +101,7 @@ I am actively seeking **Backend / Full-Stack Engineering** roles (Available May 
 
 * **Email:** [vishnoivijit@gmail.com](mailto:vishnoivijit@gmail.com)
 * **LinkedIn:** [linkedin.com/in/vijit-vishnoi](https://linkedin.com/in/vijit-vishnoi)
-* **GitHub:** [github.com/vishnoivijit](https://github.com/vishnoivijit)
+* **GitHub:** [github.com/vijit-vishnoi](https://github.com/vijit-vishnoi)
 
 ---
 
