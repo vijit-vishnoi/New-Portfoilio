@@ -58,7 +58,7 @@ export function AboutSection() {
               I specialize in <span className="text-purple-400 font-semibold">distributed systems design</span>, focusing on microservices, message queues, and high-performance APIs. My work emphasizes system reliability, database optimization, and architectural patterns that scale.
             </p>
             <p className="text-lg text-gray-300">
-              With <span className="text-green-400 font-semibold">400+ competitive programming problems</span> solved and being a <span className="text-green-400 font-semibold">Pupil at Codeforces</span>, I bring strong algorithmic thinking and problem-solving skills to every system I design.
+              With <span className="text-green-400 font-semibold">900+ competitive programming problems</span> solved and being a <span className="text-green-400 font-semibold">Pupil at Codeforces and 3 Star Coder at CodeChef</span>, I bring strong algorithmic thinking and problem-solving skills to every system I design.
             </p>
           </motion.div>
 
