@@ -3,9 +3,82 @@ import { Github, ExternalLink, Server, Database, Zap, Lock, GitBranch, TrendingU
 import { Card } from "@/app/components/ui/card";
 import { Badge } from "@/app/components/ui/badge";
 import { Button } from "@/app/components/ui/button";
+import { JSX } from "react/jsx-runtime";
 
 export function ProjectsSection() {
   const projects = [
+    {
+      title: "Sync Engine",
+      subtitle: "Real-time Collaborative Code Editor",
+      description: "Engineered a real-time collaborative code editor utilizing Go and React, implementing a custom Conflict-free Replicated Data Type (CRDT) engine with fractional indexing to guarantee 100% state consistency across concurrent distributed edits.",
+      problem: "Synchronizing state across multiple concurrent users in a collaborative environment requires conflict resolution without relying on a central locking mechanism.",
+      architecture: [
+        "Go backend with Gorilla WebSockets and Upstash Redis Pub/Sub for scalable broadcasting",
+        "Custom CRDT engine with fractional indexing for state consistency",
+        "Write-behind memory caching system in Go with a 5-second debounced ticker",
+        "Isolated remote execution environment for live multi-language compilation"
+      ],
+      challenges: [
+        {
+          challenge: "Concurrent Edits",
+          solution: "Implemented CRDT with fractional indexing for 100% state consistency"
+        },
+        {
+          challenge: "WebSocket Scalability",
+          solution: "Architected broadcasting layer with Redis Pub/Sub and 50ms adaptive batching to slash TCP traffic"
+        },
+        {
+          challenge: "Database IOPS",
+          solution: "Constructed write-behind caching to persist to MongoDB Atlas without exhausting IOPS limits"
+        }
+      ],
+      impact: [
+        "100% state consistency across concurrent distributed edits",
+        "Slashed TCP traffic with adaptive batching algorithm",
+        "Maintained MongoDB IOPS limits through debounced write-behind caching"
+      ],
+      technologies: ["Go", "Upstash Redis", "Gorilla WebSockets", "React.js", "TypeScript", "Tailwind CSS", "MongoDB", "Monaco Editor"],
+      github: "https://github.com/vijit-vishnoi/sync-engine.git",
+      live: "https://sync-engine-frontend.vercel.app/",
+      icon: Zap,
+      color: "green"
+    },
+    {
+      title: "TravelGen AI",
+      subtitle: "Full-Stack AI Travel Application",
+      description: "Shipped a full-stack AI travel application generating itineraries spanning up to 14 days by processing 5+ parameters like dates, budget, and custom interests.",
+      problem: "Serving complex AI-generated nested payloads reliably requires enforcing strict schemas and efficient parsing.",
+      architecture: [
+        "Go/Gin backend handling REST APIs and LLM integration",
+        "React/TypeScript frontend with Vite and Tailwind CSS",
+        "LLM-driven data pipeline enforcing strict JSON schemas for 50+ unique data points per query",
+        "Interactive route visualizer using React-Leaflet"
+      ],
+      challenges: [
+        {
+          challenge: "Complex Data Payloads",
+          solution: "Enforced strict JSON schemas to reliably serve complex nested payloads"
+        },
+        {
+          challenge: "Dynamic Mapping",
+          solution: "Dynamically extracted Lat/Lng data from AI responses to plot up to 15+ daily markers"
+        },
+        {
+          challenge: "Performance",
+          solution: "Used Go and Gin for high-performance backend processing of AI requests"
+        }
+      ],
+      impact: [
+        "Successfully served 50+ unique data points per query",
+        "Plotted up to 15+ daily activity markers interactively",
+        "Delivered a seamless full-stack AI experience"
+      ],
+      technologies: ["Go", "REST APIs", "Gin", "React.js", "Vite", "Vercel", "TypeScript", "Tailwind CSS"],
+      github: "https://github.com/vijit-vishnoi/travelGenAI.git",
+      live: "https://travel-gen-ai.vercel.app/",
+      icon: GitBranch,
+      color: "purple"
+    },
     {
       title: "Airline Management System",
       subtitle: "Microservices-Based Flight Booking Backend",
@@ -37,8 +110,7 @@ export function ProjectsSection() {
         "Enhanced security with rate limiting and JWT authentication"
       ],
       technologies: ["Express", "Node.js", "MySQL", "Sequelize", "RabbitMQ", "JWT", "API Gateway"],
-      github: "#",
-      live: "#",
+      github: "https://github.com/vijit-vishnoi/AirlineManagementProject.git",
       icon: Server,
       color: "blue"
     },
@@ -68,51 +140,14 @@ export function ProjectsSection() {
         }
       ],
       impact: [
-        "20+ production-ready APIs deployed for comprehensive platform coverage",
+        "Stress-tested under 200 concurrent users with a 100% API success rate",
         "100% route protection with JWT middleware ensuring data security",
         "Scalable architecture supporting future feature additions"
       ],
-      technologies: ["Express", "Node.js", "Socket.IO", "MySQL", "JWT", "Sequelize", "Tailwind CSS"],
-      github: "#",
-      live: "#",
+      technologies: ["Express", "Node.js", "React.js", "Socket.IO", "MySQL", "JWT", "Sequelize", "Tailwind CSS", "Render", "Vercel"],
+      github: "https://github.com/vijit-vishnoi/EduSphere.git",
       icon: Database,
-      color: "purple"
-    },
-    {
-      title: "Twitter Backend Service",
-      subtitle: "High-Performance Social Media API",
-      description: "A Twitter-like backend focused on database optimization and query performance, featuring user authentication, tweets, likes, and comments with significant performance improvements.",
-      problem: "Social media backends require extremely fast query responses to handle high traffic volumes and provide smooth user experiences at scale.",
-      architecture: [
-        "Express + Node.js with MongoDB for flexible document storage",
-        "Mongoose ORM with strategic indexing for optimized queries",
-        "RESTful API design for user auth, tweets, likes, and comments",
-        "Optimized query patterns for common social media operations"
-      ],
-      challenges: [
-        {
-          challenge: "Query Performance",
-          solution: "Reduced tweet retrieval time by 40% through strategic MongoDB indexing"
-        },
-        {
-          challenge: "Server Load",
-          solution: "Optimized query logic and indexing strategies, cutting server load by 35%"
-        },
-        {
-          challenge: "Data Relationships",
-          solution: "Designed efficient Mongoose schemas handling complex user-tweet-comment relationships"
-        }
-      ],
-      impact: [
-        "40% faster tweet retrieval through strategic indexing",
-        "35% reduction in overall server load via query optimization",
-        "Improved scalability for handling increased user traffic"
-      ],
-      technologies: ["Express", "Node.js", "MongoDB", "Mongoose", "JWT", "Indexing"],
-      github: "#",
-      live: "#",
-      icon: Zap,
-      color: "green"
+      color: "rose"
     }
   ];
 
@@ -123,24 +158,30 @@ export function ProjectsSection() {
     trending: <TrendingUp className="h-5 w-5" />
   };
 
-  const colorMap: Record<string, { border: string; bg: string; text: string; badge: string }> = {
+  const colorMap: Record<string, { hoverBorder: string; bg: string; text: string; badge: string }> = {
     blue: {
-      border: "border-blue-700",
+      hoverBorder: "hover:border-blue-700",
       bg: "bg-blue-950/30",
       text: "text-blue-400",
       badge: "border-blue-700 bg-blue-950/30 text-blue-300"
     },
     purple: {
-      border: "border-purple-700",
+      hoverBorder: "hover:border-purple-700",
       bg: "bg-purple-950/30",
       text: "text-purple-400",
       badge: "border-purple-700 bg-purple-950/30 text-purple-300"
     },
     green: {
-      border: "border-green-700",
+      hoverBorder: "hover:border-green-700",
       bg: "bg-green-950/30",
       text: "text-green-400",
       badge: "border-green-700 bg-green-950/30 text-green-300"
+    },
+    rose: {
+      hoverBorder: "hover:border-rose-700",
+      bg: "bg-rose-950/30",
+      text: "text-rose-400",
+      badge: "border-rose-700 bg-rose-950/30 text-rose-300"
     }
   };
 
@@ -169,7 +210,7 @@ export function ProjectsSection() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
-              <Card className={`p-8 border-gray-800 bg-gray-900/50 hover:${colorMap[project.color].border} transition-all duration-300`}>
+              <Card className={`p-8 border-gray-800 bg-gray-900/50 ${colorMap[project.color].hoverBorder} transition-all duration-300`}>
                 {/* Header */}
                 <div className="flex items-start justify-between mb-6">
                   <div className="flex items-start gap-4">
@@ -194,16 +235,18 @@ export function ProjectsSection() {
                         <Github className="h-4 w-4" />
                       </a>
                     </Button>
-                    <Button
-                      variant="outline"
-                      size="sm"
-                      asChild
-                      className="border-gray-700 hover:bg-gray-800"
-                    >
-                      <a href={project.live} target="_blank" rel="noopener noreferrer">
-                        <ExternalLink className="h-4 w-4" />
-                      </a>
-                    </Button>
+                    {project.live && project.live !== "#" && (
+                      <Button
+                        variant="outline"
+                        size="sm"
+                        asChild
+                        className="border-gray-700 hover:bg-gray-800"
+                      >
+                        <a href={project.live} target="_blank" rel="noopener noreferrer">
+                          <ExternalLink className="h-4 w-4" />
+                        </a>
+                      </Button>
+                    )}
                   </div>
                 </div>
 

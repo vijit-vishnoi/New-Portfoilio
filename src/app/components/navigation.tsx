@@ -36,7 +36,7 @@ export function Navigation() {
               window.scrollTo({ top: 0, behavior: "smooth" });
             }}
           >
-            VV
+            Vijit 
           </a>
 
           {/* Desktop Navigation */}

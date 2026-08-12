@@ -52,7 +52,7 @@ export function AboutSection() {
             transition={{ duration: 0.5, delay: 0.2 }}
           >
             <p className="text-lg text-gray-300 mb-4">
-              Computer Science undergraduate at <span className="text-blue-400 font-semibold">IIIT Ranchi</span> (CGPA: 8.4) with a passion for building robust backend systems and scalable architectures.
+              Computer Science undergraduate at <span className="text-blue-400 font-semibold">IIIT Ranchi</span> (CGPA: 8.5) with a passion for building robust backend systems and scalable architectures.
             </p>
             <p className="text-lg text-gray-300 mb-4">
               I specialize in <span className="text-purple-400 font-semibold">distributed systems design</span>, focusing on microservices, message queues, and high-performance APIs. My work emphasizes system reliability, database optimization, and architectural patterns that scale.

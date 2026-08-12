@@ -7,7 +7,7 @@ export function ExperienceSection() {
   const experience = {
     company: "Coding Panda",
     role: "Full Stack Intern",
-    duration: "Sep 2025 – Oct 2025",
+    duration: "Sep 2025 – Nov 2025",
     location: "Remote",
     achievements: [
       {
@@ -21,9 +21,13 @@ export function ExperienceSection() {
       {
         text: "Streamlined test case batch storage with Cloudflare R2",
         impact: "improving backend scalability, workflow automation, and code execution reliability"
+      },
+      {
+        text: "Partnered with senior developers in an Agile environment",
+        impact: ""
       }
     ],
-    technologies: ["Node.js", "Judge0 API", "Cloudflare R2", "Docker", "AWS", "REST APIs"]
+    technologies: ["Node.js", "Judge0 API", "Cloudflare R2", "Docker", "AWS", "REST APIs", "TypeScript", "Next.js", "MongoDB", "OAuth", "Monaco Editor"]
   };
 
   return (

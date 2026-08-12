@@ -6,38 +6,43 @@ export function SkillsSection() {
   const skillCategories = [
     {
       category: "Languages",
-      skills: ["C", "C++", "JavaScript", "Python"],
+      skills: ["C", "C++", "JavaScript", "TypeScript", "Python", "Go (Golang)", "Java"],
       color: "blue"
     },
     {
       category: "Backend & APIs",
-      skills: ["Node.js", "Express", "REST APIs", "Socket.IO", "JWT", "Sequelize", "Mongoose"],
+      skills: ["Node.js", "Express", "Gin (Go)", "REST APIs", "gRPC", "WebSockets", "Socket.IO", "JWT", "OAuth", "Sequelize", "Mongoose"],
       color: "purple"
     },
     {
       category: "Databases",
-      skills: ["MongoDB", "MySQL", "Indexing", "Query Optimization"],
+      skills: ["MongoDB", "MySQL", "Redis", "Indexing", "Query Optimization", "SQL", "NoSQL"],
       color: "green"
     },
     {
       category: "DevOps & Cloud",
-      skills: ["Docker", "AWS", "Cloudflare R2", "Git", "Linux"],
+      skills: ["Docker", "Kubernetes", "AWS", "GCP", "Azure", "Cloudflare R2", "CI/CD", "Vercel", "Render"],
       color: "orange"
     },
     {
       category: "Systems & Architecture",
-      skills: ["Microservices", "RabbitMQ", "API Gateway", "Rate Limiting", "Distributed Systems"],
+      skills: ["Microservices", "Distributed Systems", "CRDTs", "Redis Pub/Sub", "RabbitMQ", "API Gateway", "Rate Limiting"],
       color: "red"
     },
     {
       category: "Frontend",
-      skills: ["React.js", "Next.js", "Tailwind CSS", "HTML", "CSS"],
+      skills: ["React.js", "Next.js", "Tailwind CSS", "Vite", "HTML", "CSS"],
       color: "cyan"
     },
     {
       category: "Core CS",
-      skills: ["DSA", "OOP", "DBMS", "Operating Systems"],
+      skills: ["DSA", "System Design", "Computer Networks", "Operating Systems", "OOP", "DBMS"],
       color: "pink"
+    },
+    {
+      category: "Tools & Utilities",
+      skills: ["Git", "GitHub", "Linux", "VS Code", "Postman", "Monaco Editor"],
+      color: "yellow"
     }
   ];
 
@@ -48,7 +53,8 @@ export function SkillsSection() {
     orange: "border-orange-700 bg-orange-950/30 text-orange-300",
     red: "border-red-700 bg-red-950/30 text-red-300",
     cyan: "border-cyan-700 bg-cyan-950/30 text-cyan-300",
-    pink: "border-pink-700 bg-pink-950/30 text-pink-300"
+    pink: "border-pink-700 bg-pink-950/30 text-pink-300",
+    yellow: "border-yellow-700 bg-yellow-950/30 text-yellow-300"
   };
 
   return (

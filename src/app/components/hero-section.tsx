@@ -6,7 +6,8 @@ import { Button } from "@/app/components/ui/button";
 export function HeroSection() {
   const techStack = [
     "Node.js",
-    "Express",
+    "Go",
+    "Redis",
     "MongoDB",
     "MySQL",
     "RabbitMQ",
@@ -27,7 +28,7 @@ export function HeroSection() {
             Vijit Vishnoi
           </h1>
           <h2 className="text-2xl md:text-3xl text-gray-300 mb-6">
-            Backend & Full-Stack Developer
+            Backend Engineer | Full Stack Developer | Software Engineer
           </h2>
           <p className="text-lg text-gray-400 max-w-2xl mx-auto mb-8">
             Building scalable distributed systems and high-performance APIs.

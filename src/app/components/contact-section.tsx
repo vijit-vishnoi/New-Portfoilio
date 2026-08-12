@@ -9,14 +9,14 @@ export function ContactSection() {
       icon: Mail,
       label: "Email",
       value: "vishnoivijit@gmail.com",
-      href: "mailto:vishnoivijit@gmail.com",
+      href: null,
       color: "blue"
     },
     {
       icon: Phone,
       label: "Phone",
       value: "+91 8209287464",
-      href: "tel:+918209287464",
+      href: null,
       color: "green"
     },
     {
@@ -74,7 +74,7 @@ export function ContactSection() {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <Card className="p-8 border-gray-800 bg-gray-900/50 h-full">
+            <Card className="p-8 border-gray-800 bg-gray-900/50 h-full hover:border-gray-700 transition-all duration-300">
               <h3 className="text-2xl font-semibold text-gray-200 mb-6">Contact Information</h3>
               <div className="space-y-4">
                 {contactInfo.map((item, index) => (
@@ -108,7 +108,7 @@ export function ContactSection() {
                       href={link.href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-3 p-3 rounded-lg bg-gray-950/50 border border-gray-800 hover:border-blue-700 transition-all duration-300 group"
+                      className="flex items-center gap-3 p-3 rounded-lg bg-gray-950/50 border border-gray-800 hover:border-blue-500 transition-all duration-300 group"
                     >
                       <link.icon className="h-5 w-5 text-gray-400 group-hover:text-blue-400 transition-colors" />
                       <div>
@@ -131,7 +131,7 @@ export function ContactSection() {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.4 }}
           >
-            <Card className="p-8 border-gray-800 bg-gradient-to-br from-blue-950/30 to-purple-950/30 h-full flex flex-col justify-center">
+            <Card className="p-8 border-gray-800 bg-gradient-to-br from-blue-950/30 to-purple-950/30 h-full flex flex-col justify-center hover:border-purple-500 transition-all duration-300">
               <div className="text-center mb-8">
                 <div className="inline-flex p-4 rounded-full bg-blue-600/10 mb-4">
                   <Send className="h-10 w-10 text-blue-400" />
@@ -150,7 +150,7 @@ export function ContactSection() {
                   size="lg"
                   className="w-full bg-blue-600 hover:bg-blue-700 text-white"
                 >
-                  <a href="mailto:vishnoivijit@gmail.com">
+                  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=vishnoivijit@gmail.com" target="_blank" rel="noopener noreferrer">
                     <Mail className="mr-2 h-5 w-5" />
                     Send an Email
                   </a>
@@ -187,12 +187,12 @@ export function ContactSection() {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.6 }}
         >
-          <Card className="p-6 border-gray-800 bg-gray-900/50 text-center">
+          <Card className="p-6 border-gray-800 bg-gray-900/50 text-center hover:border-gray-700 transition-all duration-300">
             <div className="text-gray-400">
               <span className="text-gray-300 font-semibold">BTech in Computer Science & Engineering</span> at{" "}
               <span className="text-blue-400 font-semibold">Indian Institute of Information Technology, Ranchi</span>
               <br />
-              <span className="text-sm">CGPA: 8.4/10 | Expected Graduation: May 2027</span>
+              <span className="text-sm">CGPA: 8.5/10 | Expected Graduation: May 2027</span>
             </div>
           </Card>
         </motion.div>
